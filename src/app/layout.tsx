@@ -8,12 +8,79 @@ const vazirmatn = Vazirmatn({
 });
 
 export const metadata: Metadata = {
-  title: "AiMED | هوش پرداز نوین ای‌مد",
-  description:
-    "آموزش تخصصی هوش مصنوعی، توسعه نرم‌افزار، طراحی وب‌سایت و راهکارهای هوشمند حوزه سلامت",
-  icons: {
-    icon: "/favicon.ico",
+  metadataBase: new URL("https://novinaimed.ir"),
+
+  title: {
+    default:
+      "AiMED | دوره هوش مصنوعی، پایتون، تحلیل داده و مقاله‌نویسی",
+    template: "%s | AiMED",
   },
+
+  description:
+    "هوش پرداز نوین ای‌مد؛ ارائه دوره‌های تخصصی هوش مصنوعی، پایتون، تحلیل داده، مقاله‌نویسی علمی و خدمات توسعه نرم‌افزار و فناوری.",
+
+  keywords: [
+    "دوره هوش مصنوعی",
+    "آموزش هوش مصنوعی",
+    "دوره پایتون",
+    "آموزش پایتون",
+    "دوره تحلیل داده",
+    "تحلیل داده با پایتون",
+    "دوره مقاله نویسی",
+    "آموزش مقاله نویسی علمی",
+    "پرامپت نویسی",
+    "ChatGPT",
+    "Python",
+    "Artificial Intelligence",
+    "AiMED",
+    "هوش پرداز نوین ای مد",
+  ],
+
+  authors: [
+    {
+      name: "AiMED",
+      url: "https://novinaimed.ir",
+    },
+  ],
+
+  creator: "AiMED",
+  publisher: "AiMED",
+
+  alternates: {
+    canonical: "/",
+  },
+
+  openGraph: {
+    type: "website",
+    locale: "fa_IR",
+    url: "https://novinaimed.ir",
+    siteName: "AiMED",
+    title:
+      "AiMED | هوش مصنوعی، پایتون، تحلیل داده و آموزش تخصصی",
+    description:
+      "دوره‌های کاربردی هوش مصنوعی، پایتون، تحلیل داده و مقاله‌نویسی علمی در AiMED.",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "AiMED | Intelligent Healthcare & AI",
+    description:
+      "آموزش هوش مصنوعی، پایتون، تحلیل داده، مقاله‌نویسی و راهکارهای فناوری.",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+
+  category: "education",
 };
 
 export default function RootLayout({
@@ -23,7 +90,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fa" dir="rtl">
-      <body className={vazirmatn.className}>{children}</body>
+      <body className={vazirmatn.className}>
+        {children}
+      </body>
     </html>
   );
 }
