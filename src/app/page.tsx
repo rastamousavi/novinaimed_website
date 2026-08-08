@@ -611,9 +611,9 @@ export default function Home() {
           </div>
 
           <div className="mt-7 rounded-[2rem] border border-[#173F37]/10 bg-white p-8 shadow-sm md:p-10">
-            <div className="grid items-center gap-8 md:grid-cols-[170px_1fr]">
+            <div className="grid items-center gap-6 md:grid-cols-[130px_1fr]">
               <div className="flex justify-center">
-                <div className="relative h-40 w-40 overflow-hidden rounded-full border-[5px] border-[#DCA83C]">
+                <div className="relative h-28 w-28 overflow-hidden rounded-full border-4 border-[#DCA83C] shadow-md md:h-32 md:w-32">
                   <Image
                     src="/manager.jpg"
                     alt="دکتر رستا سادات موسوی - مدیریت AiMED"
