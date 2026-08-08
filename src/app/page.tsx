@@ -18,7 +18,7 @@ export default function Home() {
     {
       icon: "🌐",
       title: "طراحی و توسعه وب‌سایت",
-      text: "طراحی وب‌سایت‌های مدرن، سریع و ریسپانسیو برای شرکت‌ها، کسب‌وکارها، مراکز آموزشی و برندهای شخصی.",
+      text: "طراحی وب‌سایت‌های مدرن، سریع و ریسپانسیو برای شرکت‌ها، برندها، مراکز آموزشی و کسب‌وکارها.",
     },
     {
       icon: "♡",
@@ -58,7 +58,6 @@ export default function Home() {
       {/* HEADER */}
       <header className="sticky top-0 z-50 border-b border-white/10 bg-[#061f1a]/90 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-10">
-          
           <div className="flex items-center gap-3">
             <div className="flex h-11 w-11 items-center justify-center rounded-full border border-[#d5aa55] bg-[#0b352c] text-xl font-black text-[#d5aa55]">
               A
@@ -79,19 +78,15 @@ export default function Home() {
             <a href="#home" className="transition hover:text-[#d5aa55]">
               خانه
             </a>
-
             <a href="#services" className="transition hover:text-[#d5aa55]">
               خدمات
             </a>
-
             <a href="#courses" className="transition hover:text-[#d5aa55]">
               دوره‌ها
             </a>
-
             <a href="#about" className="transition hover:text-[#d5aa55]">
               درباره ما
             </a>
-
             <a href="#contact" className="transition hover:text-[#d5aa55]">
               تماس با ما
             </a>
@@ -112,11 +107,9 @@ export default function Home() {
         className="relative overflow-hidden border-b border-white/10"
       >
         <div className="absolute -right-32 top-10 h-[450px] w-[450px] rounded-full bg-[#0f6b58]/20 blur-3xl" />
-
         <div className="absolute -left-24 bottom-0 h-80 w-80 rounded-full bg-[#d5aa55]/10 blur-3xl" />
 
         <div className="mx-auto grid min-h-[82vh] max-w-7xl items-center gap-14 px-6 py-20 lg:grid-cols-2 lg:px-10">
-          
           <div className="relative z-10">
             <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-[#d5aa55]/30 bg-[#d5aa55]/10 px-4 py-2 text-sm text-[#e8c77f]">
               <span className="h-2 w-2 rounded-full bg-[#d5aa55]" />
@@ -152,21 +145,11 @@ export default function Home() {
                 مشاهده دوره‌ها
               </a>
             </div>
-
-            <div className="mt-12 flex flex-wrap gap-8 border-t border-white/10 pt-7 text-sm text-white/45">
-              <span>✓ آموزش کاربردی</span>
-              <span>✓ توسعه اختصاصی</span>
-              <span>✓ راهکارهای AI</span>
-            </div>
           </div>
 
-          {/* HERO VISUAL */}
           <div className="relative mx-auto flex min-h-[460px] w-full max-w-lg items-center justify-center">
-            
             <div className="absolute h-[360px] w-[360px] rounded-full border border-[#d5aa55]/10" />
-
             <div className="absolute h-[290px] w-[290px] rounded-full border border-[#d5aa55]/20" />
-
             <div className="absolute h-[230px] w-[230px] rounded-full bg-[#0e4035] blur-xl" />
 
             <div className="relative flex h-56 w-56 items-center justify-center rounded-full border border-[#d5aa55] bg-gradient-to-br from-[#0c493c] to-[#061f1a] shadow-2xl">
@@ -180,35 +163,12 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
-            <div className="absolute right-0 top-14 rounded-2xl border border-white/10 bg-white/[0.06] px-5 py-4 backdrop-blur-lg">
-              <div className="text-xs text-white/35">
-                Artificial Intelligence
-              </div>
-
-              <div className="mt-1 font-bold text-[#d5aa55]">
-                Smart Solutions
-              </div>
-            </div>
-
-            <div className="absolute bottom-12 left-0 rounded-2xl border border-white/10 bg-white/[0.06] px-5 py-4 backdrop-blur-lg">
-              <div className="text-xs text-white/35">
-                Digital Products
-              </div>
-
-              <div className="mt-1 font-bold">
-                Web & Software
-              </div>
-            </div>
           </div>
         </div>
       </section>
 
       {/* SERVICES */}
-      <section
-        id="services"
-        className="mx-auto max-w-7xl px-6 py-24 lg:px-10"
-      >
+      <section id="services" className="mx-auto max-w-7xl px-6 py-24 lg:px-10">
         <div className="mb-14">
           <span className="text-sm font-bold text-[#d5aa55]">
             خدمات AiMED
@@ -219,8 +179,8 @@ export default function Home() {
           </h2>
 
           <p className="mt-4 max-w-2xl leading-8 text-white/50">
-            مجموعه‌ای از خدمات تخصصی در حوزه فناوری، هوش مصنوعی،
-            آموزش و توسعه محصولات دیجیتال.
+            مجموعه‌ای از خدمات تخصصی در حوزه فناوری، هوش مصنوعی، آموزش و
+            توسعه محصولات دیجیتال.
           </p>
         </div>
 
@@ -238,22 +198,17 @@ export default function Home() {
                 {service.title}
               </h3>
 
-              <p className="mt-4 text-sm leading-7 text-white/48">
+              <p className="mt-4 text-sm leading-7 text-white/50">
                 {service.text}
               </p>
-
-              <div className="mt-7 text-sm text-[#d5aa55] opacity-0 transition group-hover:opacity-100">
-                اطلاعات بیشتر ←
-              </div>
             </article>
           ))}
         </div>
       </section>
 
-      {/* WEBSITE DESIGN SPECIAL */}
+      {/* WEB DESIGN */}
       <section className="border-y border-white/10 bg-[#082820]">
         <div className="mx-auto grid max-w-7xl items-center gap-14 px-6 py-24 lg:grid-cols-2 lg:px-10">
-          
           <div>
             <span className="text-sm font-bold text-[#d5aa55]">
               Web Development
@@ -268,9 +223,9 @@ export default function Home() {
             </h2>
 
             <p className="mt-6 max-w-xl leading-8 text-white/55">
-              در AiMED وب‌سایت‌هایی مدرن، سریع و متناسب با هویت برند
-              طراحی می‌کنیم؛ از سایت شرکتی و آموزشی تا صفحات معرفی خدمات
-              و محصولات دیجیتال.
+              در AiMED وب‌سایت‌هایی مدرن، سریع و متناسب با هویت برند طراحی
+              می‌کنیم؛ از سایت شرکتی و آموزشی تا صفحات معرفی خدمات و محصولات
+              دیجیتال.
             </p>
 
             <div className="mt-8 grid gap-3 text-sm text-white/65 sm:grid-cols-2">
@@ -290,10 +245,8 @@ export default function Home() {
             </a>
           </div>
 
-          {/* WEB VISUAL */}
           <div className="relative">
             <div className="rounded-[2rem] border border-[#d5aa55]/20 bg-[#061f1a] p-4 shadow-2xl shadow-black/30">
-              
               <div className="flex items-center gap-2 border-b border-white/10 pb-4">
                 <span className="h-3 w-3 rounded-full bg-white/20" />
                 <span className="h-3 w-3 rounded-full bg-white/20" />
@@ -306,9 +259,7 @@ export default function Home() {
 
               <div className="p-6">
                 <div className="h-5 w-28 rounded bg-[#d5aa55]/70" />
-
                 <div className="mt-8 h-8 w-3/4 rounded bg-white/15" />
-
                 <div className="mt-3 h-8 w-1/2 rounded bg-white/10" />
 
                 <div className="mt-8 grid grid-cols-3 gap-3">
@@ -316,18 +267,6 @@ export default function Home() {
                   <div className="h-28 rounded-2xl bg-[#0b392f]" />
                   <div className="h-28 rounded-2xl bg-[#0b392f]" />
                 </div>
-
-                <div className="mt-5 h-3 w-full rounded bg-white/10" />
-                <div className="mt-2 h-3 w-4/5 rounded bg-white/10" />
-              </div>
-            </div>
-
-            <div className="absolute -bottom-6 -right-5 rounded-2xl border border-[#d5aa55]/30 bg-[#0b392f] px-5 py-4 shadow-xl">
-              <div className="text-xs text-white/40">
-                Modern Development
-              </div>
-              <div className="mt-1 font-bold text-[#d5aa55]">
-                Fast • Secure • Responsive
               </div>
             </div>
           </div>
@@ -335,12 +274,8 @@ export default function Home() {
       </section>
 
       {/* COURSES */}
-      <section
-        id="courses"
-        className="mx-auto max-w-7xl px-6 py-24 lg:px-10"
-      >
+      <section id="courses" className="mx-auto max-w-7xl px-6 py-24 lg:px-10">
         <div className="grid gap-14 lg:grid-cols-[0.85fr_1.15fr]">
-          
           <div>
             <span className="text-sm font-bold text-[#d5aa55]">
               AiMED Academy
@@ -353,9 +288,8 @@ export default function Home() {
             </h2>
 
             <p className="mt-5 max-w-lg leading-8 text-white/50">
-              دوره‌های تخصصی و پروژه‌محور برای دانشجویان،
-              پژوهشگران و افرادی که می‌خواهند از فناوری در دنیای واقعی
-              استفاده کنند.
+              دوره‌های تخصصی و پروژه‌محور برای دانشجویان، پژوهشگران و افرادی
+              که می‌خواهند از فناوری در دنیای واقعی استفاده کنند.
             </p>
           </div>
 
@@ -369,9 +303,7 @@ export default function Home() {
                   {course.number}
                 </div>
 
-                <h3 className="mt-7 text-lg font-bold">
-                  {course.title}
-                </h3>
+                <h3 className="mt-7 text-lg font-bold">{course.title}</h3>
 
                 <p className="mt-3 text-sm leading-7 text-white/45">
                   {course.text}
@@ -383,12 +315,8 @@ export default function Home() {
       </section>
 
       {/* ABOUT */}
-      <section
-        id="about"
-        className="px-6 pb-24 lg:px-10"
-      >
+      <section id="about" className="px-6 pb-24 lg:px-10">
         <div className="mx-auto max-w-7xl rounded-[2.5rem] border border-[#d5aa55]/20 bg-gradient-to-l from-[#0b392f] to-[#071f1a] p-8 sm:p-12 lg:p-16">
-          
           <span className="text-sm font-bold text-[#d5aa55]">
             درباره AiMED
           </span>
@@ -397,12 +325,19 @@ export default function Home() {
             هوش پرداز نوین ای‌مد
           </h2>
 
-          <p className="mt-6 max-w-4xl text-base leading-9 text-white/58">
-            AiMED مجموعه‌ای فناورانه با تمرکز بر هوش مصنوعی،
-            آموزش تخصصی، توسعه نرم‌افزار، طراحی وب‌سایت و فناوری سلامت است.
-            هدف ما تبدیل دانش و فناوری‌های نوین به راهکارهایی قابل استفاده
-            برای افراد، پژوهشگران، سازمان‌ها و کسب‌وکارهاست.
+          <p className="mt-6 max-w-4xl text-base leading-9 text-white/60">
+            AiMED مجموعه‌ای فناورانه با تمرکز بر هوش مصنوعی، آموزش تخصصی،
+            توسعه نرم‌افزار، طراحی وب‌سایت و فناوری سلامت است. هدف ما تبدیل
+            دانش و فناوری‌های نوین به راهکارهایی قابل استفاده برای افراد،
+            پژوهشگران، سازمان‌ها و کسب‌وکارهاست.
           </p>
+
+          <div className="mt-8 inline-flex flex-wrap items-center gap-3 rounded-2xl border border-[#d5aa55]/20 bg-white/[0.04] px-5 py-4">
+            <span className="text-sm text-white/45">مدیریت:</span>
+            <span className="font-bold text-[#d5aa55]">
+              دکتر رستا سادات موسوی
+            </span>
+          </div>
 
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {[
@@ -419,9 +354,7 @@ export default function Home() {
                   {title}
                 </div>
 
-                <div className="mt-2 text-sm text-white/45">
-                  {text}
-                </div>
+                <div className="mt-2 text-sm text-white/45">{text}</div>
               </div>
             ))}
           </div>
@@ -429,14 +362,9 @@ export default function Home() {
       </section>
 
       {/* CONTACT */}
-      <section
-        id="contact"
-        className="px-6 pb-24 lg:px-10"
-      >
+      <section id="contact" className="px-6 pb-24 lg:px-10">
         <div className="mx-auto max-w-7xl rounded-[2.5rem] bg-[#d5aa55] px-8 py-14 text-[#05251e] sm:px-14">
-          
           <div className="flex flex-col justify-between gap-9 lg:flex-row lg:items-center">
-            
             <div>
               <span className="text-sm font-bold opacity-60">
                 Let's Build Something Smart
@@ -465,9 +393,10 @@ export default function Home() {
       {/* FOOTER */}
       <footer className="border-t border-white/10">
         <div className="mx-auto flex max-w-7xl flex-col justify-between gap-5 px-6 py-8 text-sm text-white/35 sm:flex-row lg:px-10">
-          
           <div>
             © 2026 AiMED — هوش پرداز نوین ای‌مد
+            <span className="mx-2 text-white/20">|</span>
+            مدیریت: دکتر رستا سادات موسوی
           </div>
 
           <div className="flex flex-wrap gap-5">
