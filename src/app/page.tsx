@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 const services = [
@@ -29,7 +28,7 @@ const services = [
   {
     icon: "🩺",
     title: "فناوری سلامت",
-    en: "Digital Health",
+    en: "Digital Health & HealthTech",
     desc: "ایده‌پردازی و توسعه راهکارهای هوشمند و داده‌محور در حوزه سلامت و HealthTech.",
   },
   {
@@ -75,7 +74,7 @@ const courses = [
     audience: "دانشجویان و پژوهشگران تمامی رشته‌ها",
     price: "۲,۵۹۰,۰۰۰",
     oldPrice: "",
-    gift: "🎁 ۳ ساعت آموزش تکمیلی ویژه مناسب تمام رشته‌ها",
+    gift: "🎁 ۳ ساعت آموزش تکمیلی ویژه، مناسب تمام رشته‌ها",
     topics: [
       "انتخاب موضوع و مسئله پژوهش",
       "Research Question و Research Gap",
@@ -105,7 +104,7 @@ const courses = [
   {
     slug: "data-analysis-python",
     badge: "پروژه‌محور",
-    title: "تحلیل داده با پایتون",
+    title: "دوره تحلیل داده با پایتون",
     subtitle: "Data Analysis with Python",
     duration: "پروژه‌محور",
     level: "مقدماتی تا متوسط",
@@ -119,7 +118,7 @@ const courses = [
       "Data Cleaning",
       "Missing Values",
       "Data Transformation",
-      "کار با CSV و Excel",
+      "کار با Excel و CSV",
       "Exploratory Data Analysis",
       "Matplotlib",
       "Data Visualization",
@@ -133,7 +132,7 @@ const courses = [
     slug: "python-junior",
     badge: "۱۰ تا ۱۵ سال",
     title: "Python Junior",
-    subtitle: "آموزش برنامه‌نویسی برای نوجوانان",
+    subtitle: "آموزش برنامه‌نویسی پایتون برای نوجوانان",
     duration: "۳۰ ساعت",
     level: "از صفر",
     audience: "نوجوانان ۱۰ تا ۱۵ سال، بدون نیاز به پیش‌زمینه",
@@ -160,7 +159,7 @@ const courses = [
     slug: "python-pro",
     badge: "۱۶ سال به بالا",
     title: "Python Pro",
-    subtitle: "Python از صفر تا پروژه",
+    subtitle: "آموزش Python از صفر تا پروژه",
     duration: "۵۴ ساعت",
     level: "مقدماتی تا متوسط",
     audience: "افراد ۱۶ سال به بالا برای یادگیری جدی برنامه‌نویسی",
@@ -178,8 +177,8 @@ const courses = [
       "Error Handling",
       "Object-Oriented Programming",
       "Libraries",
-      "API مقدماتی",
-      "Git و GitHub مقدماتی",
+      "مقدماتی API",
+      "مقدماتی Git و GitHub",
       "پروژه‌های کاربردی",
       "مسیر ورود به Data Analysis",
       "مسیر ورود به AI",
@@ -227,12 +226,16 @@ const faqs = [
     a: "بسته به دوره متفاوت است. دوره‌های مقدماتی مانند هوش مصنوعی کاربردی و Python Junior بدون نیاز به پیش‌زمینه طراحی شده‌اند.",
   },
   {
+    q: "دوره‌های AiMED برای چه افرادی مناسب هستند؟",
+    a: "دوره‌ها برای دانشجویان، پژوهشگران، شاغلان، علاقه‌مندان فناوری و افرادی طراحی شده‌اند که می‌خواهند مهارت‌های کاربردی در هوش مصنوعی، پایتون، تحلیل داده و پژوهش علمی کسب کنند.",
+  },
+  {
     q: "دوره‌ها چگونه ارائه می‌شوند؟",
-    a: "پس از تأیید ثبت‌نام، دسترسی دوره و فایل‌های مربوط به آن در اختیار دانشجو قرار می‌گیرد.",
+    a: "پس از تأیید ثبت‌نام، اطلاعات مربوط به نحوه دسترسی به دوره و فایل‌های آموزشی در اختیار دانشجو قرار می‌گیرد.",
   },
   {
     q: "آیا دوره‌ها پروژه دارند؟",
-    a: "دوره‌های AiMED با رویکرد کاربردی و پروژه‌محور طراحی شده‌اند و نوع پروژه در هر دوره متفاوت است.",
+    a: "دوره‌های AiMED با رویکرد کاربردی و پروژه‌محور طراحی شده‌اند و نوع پروژه متناسب با موضوع هر دوره متفاوت است.",
   },
   {
     q: "آیا پشتیبانی آموزشی وجود دارد؟",
@@ -240,7 +243,7 @@ const faqs = [
   },
   {
     q: "چگونه ثبت‌نام کنم؟",
-    a: "برای دریافت شماره کارت و اطلاعات ثبت‌نام از طریق دایرکت اینستاگرام @novinaimed پیام دهید.",
+    a: "برای دریافت اطلاعات ثبت‌نام و شماره کارت، از طریق دایرکت اینستاگرام @novinaimed پیام دهید.",
   },
 ];
 
@@ -266,27 +269,13 @@ export default function Home() {
           </a>
 
           <nav className="hidden items-center gap-5 text-[13px] font-bold text-white/70 lg:flex">
-            <a href="#home" className="hover:text-[#F1BE58]">
-              خانه
-            </a>
-            <a href="#services" className="hover:text-[#F1BE58]">
-              خدمات
-            </a>
-            <a href="#courses" className="hover:text-[#F1BE58]">
-              دوره‌ها
-            </a>
-            <a href="#projects" className="hover:text-[#F1BE58]">
-              پروژه‌ها
-            </a>
-            <a href="#about" className="hover:text-[#F1BE58]">
-              درباره ما
-            </a>
-            <a href="#faq" className="hover:text-[#F1BE58]">
-              سوالات متداول
-            </a>
-            <a href="#contact" className="hover:text-[#F1BE58]">
-              تماس با ما
-            </a>
+            <a href="#home" className="hover:text-[#F1BE58]">خانه</a>
+            <a href="#services" className="hover:text-[#F1BE58]">خدمات</a>
+            <a href="#courses" className="hover:text-[#F1BE58]">دوره‌ها</a>
+            <a href="#projects" className="hover:text-[#F1BE58]">پروژه‌ها</a>
+            <a href="#about" className="hover:text-[#F1BE58]">درباره ما</a>
+            <a href="#faq" className="hover:text-[#F1BE58]">سوالات متداول</a>
+            <a href="#contact" className="hover:text-[#F1BE58]">تماس با ما</a>
           </nav>
 
           <div className="flex items-center gap-2">
@@ -329,55 +318,65 @@ export default function Home() {
       {/* HERO */}
       <section
         id="home"
-        className="relative overflow-hidden border-b border-white/10 px-5 py-14 lg:px-8 lg:py-16"
+        className="relative overflow-hidden border-b border-white/10 px-5 py-16 lg:px-8 lg:py-24"
       >
         <div className="absolute -left-28 top-10 h-80 w-80 rounded-full bg-[#DCA83C]/10 blur-3xl" />
         <div className="absolute -right-32 top-20 h-96 w-96 rounded-full bg-[#159179]/15 blur-3xl" />
 
-        <div className="relative mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[1.15fr_.85fr]">
+        <div className="relative mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.15fr_.85fr]">
           <div>
             <div className="inline-flex items-center gap-2 rounded-full border border-[#DCA83C]/35 bg-[#DCA83C]/10 px-4 py-2 text-xs font-bold text-[#F1BE58]">
               <span className="h-2 w-2 rounded-full bg-[#F1BE58]" />
               AI for a Smarter Tomorrow
             </div>
 
-            <h1 className="mt-6 text-5xl font-black leading-[1.4] md:text-6xl lg:text-7xl">
-              فناوری هوشمند
+            <h1 className="mt-6 text-4xl font-black leading-[1.5] md:text-6xl lg:text-7xl">
+              آموزش هوش مصنوعی،
               <br />
-              برای ساختن
+              پایتون و تحلیل داده
               <br />
-              <span className="text-[#F1B63D]">آینده‌ای بهتر</span>
+              <span className="text-[#F1B63D]">
+                با رویکرد کاربردی
+              </span>
             </h1>
 
-            <p className="mt-6 max-w-2xl text-base leading-9 text-white/65">
-              هوش پرداز نوین ای‌مد، مجموعه‌ای تخصصی در آموزش هوش مصنوعی،
-              برنامه‌نویسی و تحلیل داده، توسعه نرم‌افزار، طراحی وب‌سایت و
-              راهکارهای هوشمند با تمرکز ویژه بر فناوری سلامت است.
+            <p className="mt-6 max-w-2xl text-base leading-9 text-white/70 md:text-lg">
+              هوش پرداز نوین ای‌مد (AiMED) مجموعه‌ای تخصصی در آموزش هوش
+              مصنوعی، برنامه‌نویسی پایتون، تحلیل داده، مقاله‌نویسی علمی،
+              توسعه نرم‌افزار و راهکارهای هوشمند با تمرکز ویژه بر فناوری
+              سلامت است.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
               <a
-                href="#services"
-                className="rounded-full bg-[#E5AC35] px-7 py-3.5 font-black text-[#06362F]"
+                href="#courses"
+                className="rounded-full bg-[#E5AC35] px-7 py-3.5 font-black text-[#06362F] transition hover:-translate-y-1"
               >
-                مشاهده خدمات
+                مشاهده دوره‌های آموزشی
               </a>
 
               <a
-                href="#courses"
-                className="rounded-full border border-white/20 px-7 py-3.5 font-black"
+                href="#services"
+                className="rounded-full border border-white/20 px-7 py-3.5 font-black transition hover:border-[#E5AC35]"
               >
-                مشاهده دوره‌ها
+                خدمات AiMED
               </a>
+            </div>
+
+            <div className="mt-10 flex flex-wrap gap-x-7 gap-y-3 text-xs text-white/45">
+              <span>✓ آموزش پروژه‌محور</span>
+              <span>✓ هوش مصنوعی و Python</span>
+              <span>✓ تحلیل داده</span>
+              <span>✓ پژوهش علمی</span>
             </div>
           </div>
 
-          <div className="relative hidden min-h-[330px] items-center justify-center md:flex">
-            <div className="absolute h-72 w-72 rounded-full border border-[#DCA83C]/20" />
-            <div className="absolute h-60 w-60 rounded-full border border-[#DCA83C]/25" />
+          <div className="relative hidden min-h-[380px] items-center justify-center md:flex">
+            <div className="absolute h-80 w-80 rounded-full border border-[#DCA83C]/15" />
+            <div className="absolute h-64 w-64 rounded-full border border-[#DCA83C]/25" />
             <div className="absolute h-48 w-48 rounded-full border border-[#DCA83C]/35" />
 
-            <div className="relative flex h-44 w-44 items-center justify-center rounded-full border border-[#E3AB3E] bg-[#0A5145]">
+            <div className="relative flex h-44 w-44 items-center justify-center rounded-full border border-[#E3AB3E] bg-[#0A5145] shadow-2xl">
               <div className="text-center">
                 <div className="text-4xl font-black">
                   Ai<span className="text-[#F1BE58]">MED</span>
@@ -391,25 +390,45 @@ export default function Home() {
         </div>
       </section>
 
+      {/* SEO INTRO */}
+      <section className="bg-[#F8F6EF] px-5 py-16 text-[#123B34] lg:px-8">
+        <div className="mx-auto max-w-5xl text-center">
+          <div className="text-xs font-black text-[#A77920]">
+            AiMED Academy
+          </div>
+
+          <h2 className="mt-3 text-3xl font-black leading-relaxed md:text-5xl">
+            یادگیری مهارت‌های موردنیاز دنیای هوش مصنوعی
+          </h2>
+
+          <p className="mx-auto mt-6 max-w-4xl text-sm leading-9 text-[#586F69] md:text-base">
+            در AiMED می‌توانید از سطح مقدماتی وارد مسیر یادگیری هوش مصنوعی،
+            پایتون، تحلیل داده و مقاله‌نویسی علمی شوید. دوره‌ها با تمرکز بر
+            مهارت عملی، تمرین و پروژه طراحی شده‌اند تا آموخته‌ها را در
+            تحصیل، پژوهش و محیط حرفه‌ای به کار بگیرید.
+          </p>
+        </div>
+      </section>
+
       {/* SERVICES */}
       <section
         id="services"
-        className="bg-[#F8F6EF] px-5 py-20 text-[#123B34] lg:px-8"
+        className="bg-[#F1EEE4] px-5 py-20 text-[#123B34] lg:px-8"
       >
         <div className="mx-auto max-w-7xl">
           <LightSectionTitle
             kicker="خدمات AiMED"
             title="فناوری، آموزش و راهکارهای هوشمند"
-            desc="از آموزش تخصصی تا توسعه راهکارهای نرم‌افزاری و هوش مصنوعی، خدمات AiMED با تمرکز بر کاربرد واقعی طراحی شده‌اند."
+            desc="از آموزش تخصصی تا توسعه راهکارهای نرم‌افزاری، تحلیل داده و هوش مصنوعی؛ خدمات AiMED با تمرکز بر کاربرد واقعی طراحی شده‌اند."
           />
 
           <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {services.map((service) => (
               <article
                 key={service.title}
-                className="rounded-[1.8rem] border border-[#173F37]/10 bg-white p-7 shadow-sm transition hover:-translate-y-1"
+                className="rounded-[1.8rem] border border-[#173F37]/10 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
               >
-                <div className="mb-5 text-2xl">{service.icon}</div>
+                <div className="mb-5 text-3xl">{service.icon}</div>
                 <h3 className="text-xl font-black">{service.title}</h3>
                 <p className="mt-1 text-[11px] font-bold text-[#A97A20]">
                   {service.en}
@@ -432,7 +451,7 @@ export default function Home() {
           <DarkSectionTitle
             kicker="AiMED Academy"
             title="دوره‌های آموزشی تخصصی"
-            desc="برای مشاهده توضیحات کامل، سرفصل‌ها، مدت دوره و ثبت‌نام، وارد صفحه اختصاصی هر دوره شوید."
+            desc="دوره‌های هوش مصنوعی، مقاله‌نویسی علمی، تحلیل داده و برنامه‌نویسی پایتون را بررسی کنید و برای مشاهده سرفصل کامل وارد صفحه اختصاصی هر دوره شوید."
           />
 
           <div className="mt-10 space-y-7">
@@ -527,7 +546,7 @@ export default function Home() {
                       href={`/courses/${course.slug}`}
                       className="mt-7 inline-block text-sm font-black text-[#F1BE58]"
                     >
-                      مشاهده تمام سرفصل‌ها و جزئیات ←
+                      ← مشاهده تمام سرفصل‌ها و جزئیات
                     </Link>
                   </div>
                 </div>
@@ -546,7 +565,7 @@ export default function Home() {
           <DarkSectionTitle
             kicker="Projects & Solutions"
             title="حوزه‌های پروژه و همکاری"
-            desc="AiMED آماده بررسی و توسعه پروژه‌های فناورانه، آموزشی و داده‌محور است."
+            desc="AiMED آماده بررسی و توسعه پروژه‌های فناورانه، آموزشی، نرم‌افزاری و داده‌محور است."
           />
 
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
@@ -559,7 +578,7 @@ export default function Home() {
             ].map(([icon, title]) => (
               <div
                 key={title}
-                className="rounded-3xl border border-white/10 bg-white/[0.035] p-7 text-center"
+                className="rounded-3xl border border-white/10 bg-white/[0.035] p-7 text-center transition hover:-translate-y-1"
               >
                 <div className="text-3xl">{icon}</div>
                 <div className="mt-4 font-black">{title}</div>
@@ -578,11 +597,11 @@ export default function Home() {
           <LightSectionTitle
             kicker="About AiMED"
             title="درباره هوش پرداز نوین ای‌مد"
-            desc="تلفیق دانش، آموزش و فناوری برای تبدیل ایده‌ها به خروجی‌های کاربردی."
+            desc="تلفیق دانش، آموزش و فناوری برای تبدیل ایده‌ها به مهارت و خروجی‌های کاربردی."
           />
 
           <div className="mt-10 grid gap-6 lg:grid-cols-[.8fr_1.2fr]">
-            <div className="rounded-[2rem] border border-[#173F37]/10 bg-white p-8">
+            <div className="rounded-[2rem] border border-[#173F37]/10 bg-white p-8 shadow-sm">
               <LightCompanyRow label="نام برند" value="AiMED" />
               <LightCompanyRow
                 label="نام فارسی"
@@ -590,7 +609,7 @@ export default function Home() {
               />
               <LightCompanyRow
                 label="مدیریت"
-                value="دکتر رستا سادات موسوی"
+                value="رستا سادات موسوی"
               />
               <LightCompanyRow label="موقعیت" value="شیراز، ایران" />
               <LightCompanyRow label="وب‌سایت" value="NovinAiMed.ir" />
@@ -598,44 +617,20 @@ export default function Home() {
             </div>
 
             <div className="rounded-[2rem] bg-[#0B594B] p-8 text-white md:p-10">
-              <h3 className="text-3xl font-black">
+              <div className="text-xs font-black text-[#F1BE58]">
+                OUR MISSION
+              </div>
+
+              <h3 className="mt-3 text-3xl font-black leading-relaxed">
                 جایی که دانش به راهکار تبدیل می‌شود
               </h3>
 
               <p className="mt-6 leading-9 text-white/70">
                 AiMED در حوزه هوش مصنوعی، تحلیل داده، توسعه نرم‌افزار،
                 طراحی وب‌سایت، آموزش تخصصی و راهکارهای هوشمند حوزه سلامت
-                فعالیت می‌کند.
+                فعالیت می‌کند. هدف ما ایجاد مسیری کاربردی میان یادگیری،
+                پژوهش و اجرای پروژه‌های واقعی است.
               </p>
-            </div>
-          </div>
-
-          <div className="mt-7 rounded-[2rem] border border-[#173F37]/10 bg-white p-8 shadow-sm md:p-10">
-            <div className="grid items-center gap-6 md:grid-cols-[130px_1fr]">
-              <div className="flex justify-center">
-                <div className="relative h-28 w-28 overflow-hidden rounded-full border-4 border-[#DCA83C] shadow-md md:h-32 md:w-32">
-                  <Image
-                    src="/manager.jpg"
-                    alt="دکتر رستا سادات موسوی - مدیریت AiMED"
-                    fill
-                    priority
-                    sizes="160px"
-                    className="object-cover object-top"
-                  />
-                </div>
-              </div>
-
-              <div>
-                <div className="text-xs font-black text-[#A77920]">
-                  مدیریت AiMED
-                </div>
-                <h3 className="mt-3 text-3xl font-black">
-                  دکتر رستا سادات موسوی
-                </h3>
-                <p className="mt-3 text-sm text-[#526D66]">
-                  مدیریت هوش پرداز نوین ای‌مد
-                </p>
-              </div>
             </div>
           </div>
         </div>
@@ -647,7 +642,7 @@ export default function Home() {
           <DarkSectionTitle
             kicker="Why AiMED?"
             title="چرا AiMED؟"
-            desc="تمرکز بر مهارت واقعی، پروژه و فناوری‌های روز."
+            desc="تمرکز بر مهارت واقعی، پروژه، یادگیری هدفمند و فناوری‌های روز."
           />
 
           <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -674,17 +669,23 @@ export default function Home() {
       >
         <div className="mx-auto max-w-7xl">
           <div className="rounded-[2.4rem] bg-[#0B594B] p-8 text-white md:p-12">
-            <h2 className="text-3xl font-black">ثبت‌نام دوره‌ها</h2>
+            <div className="text-xs font-black text-[#F1BE58]">
+              AiMED Academy
+            </div>
+
+            <h2 className="mt-3 text-3xl font-black">
+              ثبت‌نام دوره‌های آموزشی
+            </h2>
 
             <p className="mt-5 max-w-2xl leading-8 text-white/65">
-              برای دریافت شماره کارت و اطلاعات ثبت‌نام دوره موردنظر از طریق
-              دایرکت اینستاگرام AiMED پیام دهید.
+              برای دریافت اطلاعات ثبت‌نام و شماره کارت دوره موردنظر، از
+              طریق دایرکت صفحه رسمی AiMED پیام دهید.
             </p>
 
             <a
               href="https://instagram.com/novinaimed"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="mt-7 inline-block rounded-full bg-[#E9AE32] px-7 py-4 font-black text-[#07372F]"
             >
               دایرکت @novinaimed
@@ -702,7 +703,7 @@ export default function Home() {
           <LightSectionTitle
             kicker="FAQ"
             title="سوالات متداول"
-            desc="پاسخ به پرسش‌های رایج درباره دوره‌ها."
+            desc="پاسخ به پرسش‌های رایج درباره دوره‌های آموزشی AiMED."
           />
 
           <div className="mt-10 space-y-3">
@@ -714,6 +715,7 @@ export default function Home() {
                 <summary className="cursor-pointer font-black">
                   {faq.q}
                 </summary>
+
                 <p className="mt-5 text-sm leading-8 text-[#536D67]">
                   {faq.a}
                 </p>
@@ -730,14 +732,25 @@ export default function Home() {
       >
         <div className="mx-auto max-w-7xl">
           <div className="rounded-[2.4rem] border border-[#DCA83C]/30 bg-[#0B594B] p-8 md:p-12">
-            <h2 className="text-3xl font-black">
-              برای همکاری با ما در ارتباط باشید
+            <div className="text-xs font-black text-[#F1BE58]">
+              CONTACT AiMED
+            </div>
+
+            <h2 className="mt-3 text-3xl font-black">
+              برای آموزش، پروژه و همکاری با ما در ارتباط باشید
             </h2>
 
-            <div className="mt-7 space-y-3">
-              <div>rastamousavi79@gmail.com</div>
-              <div>@novinaimed</div>
-              <div>Shiraz, Iran</div>
+            <p className="mt-5 max-w-2xl leading-8 text-white/65">
+              برای دریافت اطلاعات دوره‌ها، پیشنهاد همکاری یا بررسی پروژه
+              می‌توانید از طریق ایمیل یا صفحه رسمی اینستاگرام AiMED با ما
+              در ارتباط باشید.
+            </p>
+
+            <div className="mt-7 space-y-3 text-sm">
+              <div>📧 rastamousavi79@gmail.com</div>
+              <div>📱 @novinaimed</div>
+              <div>📍 Shiraz, Iran</div>
+              <div>🌐 NovinAiMed.ir</div>
             </div>
           </div>
         </div>
@@ -745,9 +758,14 @@ export default function Home() {
 
       {/* FOOTER */}
       <footer className="bg-[#02241F] px-5 py-10 text-white">
-        <div className="mx-auto flex max-w-7xl flex-col justify-between gap-4 md:flex-row">
-          <div className="font-black">
-            Ai<span className="text-[#E9AE32]">MED</span>
+        <div className="mx-auto flex max-w-7xl flex-col justify-between gap-5 md:flex-row md:items-center">
+          <div>
+            <div className="text-xl font-black">
+              Ai<span className="text-[#E9AE32]">MED</span>
+            </div>
+            <div className="mt-1 text-[10px] text-white/35">
+              Artificial Intelligence • Data • HealthTech
+            </div>
           </div>
 
           <div className="text-xs text-white/40">
@@ -771,7 +789,9 @@ function DarkSectionTitle({
   return (
     <div className="max-w-3xl">
       <div className="text-xs font-black text-[#F1BE58]">{kicker}</div>
-      <h2 className="mt-3 text-3xl font-black md:text-5xl">{title}</h2>
+      <h2 className="mt-3 text-3xl font-black leading-relaxed md:text-5xl">
+        {title}
+      </h2>
       <p className="mt-4 text-sm leading-8 text-white/55">{desc}</p>
     </div>
   );
@@ -789,7 +809,9 @@ function LightSectionTitle({
   return (
     <div className="max-w-3xl">
       <div className="text-xs font-black text-[#A77920]">{kicker}</div>
-      <h2 className="mt-3 text-3xl font-black md:text-5xl">{title}</h2>
+      <h2 className="mt-3 text-3xl font-black leading-relaxed md:text-5xl">
+        {title}
+      </h2>
       <p className="mt-4 text-sm leading-8 text-[#586F69]">{desc}</p>
     </div>
   );
@@ -818,9 +840,9 @@ function LightCompanyRow({
   value: string;
 }) {
   return (
-    <div className="flex justify-between border-b border-[#173F37]/10 py-4 text-sm last:border-0">
+    <div className="flex justify-between gap-5 border-b border-[#173F37]/10 py-4 text-sm last:border-0">
       <span className="text-[#71817D]">{label}</span>
-      <span className="font-black">{value}</span>
+      <span className="text-left font-black">{value}</span>
     </div>
   );
 }
