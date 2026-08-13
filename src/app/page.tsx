@@ -214,6 +214,14 @@ export default function Home() {
             <a className="transition hover:text-[#F1BE58]" href="#faq">
               سوالات متداول
             </a>
+            <a
+  className="transition hover:text-[#F1BE58]"
+  href="https://care.novinaimed.ir"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  AiMED Care
+</a>
           </nav>
 
           <a
