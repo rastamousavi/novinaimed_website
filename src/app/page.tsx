@@ -222,6 +222,12 @@ export default function Home() {
 >
   AiMED Care
 </a>
+<a
+  className="transition hover:text-[#F1BE58]"
+  href="/certificate"
+>
+  استعلام مدرک
+</a>
           </nav>
 
           <a
