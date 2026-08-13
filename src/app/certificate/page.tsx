@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 
 type Certificate = {
@@ -14,7 +14,7 @@ type Certificate = {
   status: string;
 };
 
-export default function CertificatePage() {
+function CertificateVerification() {
   const searchParams = useSearchParams();
 
   const [certificateId, setCertificateId] = useState("");
@@ -83,7 +83,6 @@ export default function CertificatePage() {
         idFromUrl.trim().toUpperCase();
 
       setCertificateId(normalizedId);
-
       verifyCertificate(normalizedId);
     }
   }, [searchParams]);
@@ -140,8 +139,7 @@ export default function CertificatePage() {
             lineHeight: "1.7",
           }}
         >
-          Enter the Certificate ID to verify
-          a certificate issued by Novin AiMED.
+          Enter the Certificate ID to verify a certificate issued by Novin AiMED.
         </p>
 
         <input
@@ -202,8 +200,7 @@ export default function CertificatePage() {
               padding: "18px",
               borderRadius: "14px",
               background: "#fff1f1",
-              border:
-                "1px solid #f1caca",
+              border: "1px solid #f1caca",
               color: "#a12626",
               textAlign: "center",
             }}
@@ -219,8 +216,7 @@ export default function CertificatePage() {
               padding: "24px",
               borderRadius: "16px",
               background: "#f3faf7",
-              border:
-                "1px solid #c9e4d8",
+              border: "1px solid #c9e4d8",
             }}
           >
             <h2
@@ -273,15 +269,13 @@ export default function CertificatePage() {
               <span
                 style={{
                   color:
-                    certificate.status ===
-                    "valid"
+                    certificate.status === "valid"
                       ? "#0f7a53"
                       : "#b91c1c",
                   fontWeight: "bold",
                 }}
               >
-                {certificate.status ===
-                "valid"
+                {certificate.status === "valid"
                   ? "Valid"
                   : "Revoked"}
               </span>
@@ -301,5 +295,28 @@ export default function CertificatePage() {
         </p>
       </div>
     </main>
+  );
+}
+
+export default function CertificatePage() {
+  return (
+    <Suspense
+      fallback={
+        <main
+          style={{
+            minHeight: "100vh",
+            background: "#0f4b3f",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            color: "white",
+          }}
+        >
+          Loading certificate verification...
+        </main>
+      }
+    >
+      <CertificateVerification />
+    </Suspense>
   );
 }
